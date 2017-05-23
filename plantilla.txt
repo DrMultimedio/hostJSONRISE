@@ -1,0 +1,7 @@
+http://objgen.com/json
+ foto[0]
+   thumbnail= http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_5997.jpg
+   foto=http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_5997.jpg
+ foto[1]
+   thumbnail=100 East Main Street
+   foto=Southernville
