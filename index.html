@@ -3,7 +3,47 @@
 </head>
 <body> 
 Hola mundo
-<a href="fotos.json"> Fotos json </a> 
+<a href="fotos.json"> Fotos json </a> <br>
+<button onclick="click()">Resultado</button>
+<div id = "resultado"> </div>
+
+<script>
+function click(){
+    imgs = [
+          'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_8368a.jpg',
+          'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_3791.jpg',
+    			'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/IMG_3120.JPG',
+    			'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_0367_1.jpg',
+    			'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_3170_1.jpg',
+    			'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_3083.jpg',
+          'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_5824a.jpg',
+          'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_9346_1.jpg',
+          'http://rise.com.es/sites/default/files/styles/galeria-300-ancho/public/_MG_5265_1.jpg'
+
+          ];
+    imgs_big = [
+          'http://rise.com.es/sites/default/files/_MG_8368a.jpg',
+          'http://rise.com.es/sites/default/files/_MG_3791.jpg',
+          'http://rise.com.es/sites/default/files/IMG_3120.JPG',
+          'http://rise.com.es/sites/default/files/_MG_0367_1.jpg',
+          'http://rise.com.es/sites/default/files/_MG_3170_1.jpg',
+          'http://rise.com.es/sites/default/files/_MG_3083.jpg',
+          'http://rise.com.es/sites/default/files/_MG_5824a.jpg',
+          'http://rise.com.es/sites/default/files/_MG_9346_1.jpg',
+          'http://rise.com.es/sites/default/files/_MG_5265_1.jpg'
+
+          ];
+
+    for(i = 0; i< imgs.length; i++){
+    	final = "";
+    	final = final + "foto[" + i +"] <br> thumbnail =" +imgs[i] + "<br> grande = " +imgs_big[i] + "<br>" ; 
+    }
+    alert();
+		document.getElementById("resultado").innerHTML = final;
+}
+
+</script>
+
 </body>
 
 </html>
