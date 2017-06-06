@@ -1,6 +1,6 @@
 <html>
 <head>
-<script type='text/javascript' src='functions.js'></script>
+<script type='text/javascript' src='functionsweb.js'></script>
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body onload="llenar_lista()"> 
@@ -10,9 +10,9 @@
   <h3>Añadir nueva foto</h3>
   <label for="peq">Url miniatura</label>
   <input type="text" name ="peq"><br>
-  <label for="grande">Url grande</label>
+  <label for="grande">Página Web</label>
   <input type="text" name ="grande"><br>
-  <input type="button" onclick="agregarImagen()" value="Agregar">
+  <input type="button" onclick="agregarImagen()" value="Agregar imagen">
 </form>
 <br>
 
@@ -22,6 +22,9 @@
 <button onclick="transformarJson()">Generar JSON</button><br>
 <h3>Resultado</h3>
 <textarea id = "resultado"  style="height:200px; width:600px"> </textarea>
+<h3>Carga un JSON</h3>
+<textarea id = "carga"  style="height:200px; width:600px"> </textarea>
+<input type="button" onclick="cargarJSON()" value="Cargar JSON">
 
 </body>
 
