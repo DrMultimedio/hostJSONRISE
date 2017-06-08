@@ -66,3 +66,12 @@ function quitarImagen(n){
   imgs_big.splice(n, 1);
   ver_fotos();
 }
+function cargarJSON(){
+  console.log(document.getElementById("carga").value);
+  obj = JSON.parse(document.getElementById("carga").value);
+  imgs = obj[0];
+  var imgs_big  = obj[1];
+  console.log(obj);
+    ver_fotos();
+
+}

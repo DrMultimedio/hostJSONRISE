@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body onload="llenar_lista()"> 
-<a href="fotos.json"> Fotos json </a> <br>
+<a href="web.html"> Ir al cargador de webs </a> <br>
 
 <form name="formulario" id="formulario">
   <h3>Añadir nueva foto</h3>
@@ -22,6 +22,9 @@
 <button onclick="transformarJson()">Generar JSON</button><br>
 <h3>Resultado</h3>
 <textarea id = "resultado"  style="height:200px; width:600px"> </textarea>
+<h3>Carga JSON</h3>
+<textarea id = "carga"  style="height:200px; width:600px"> </textarea> <br>
+<input type="button" onclick="cargarJSON()" value="Cargar JSON">
 
 </body>
 
